@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="calculator">
+        <div>
+            <h1 class="sio">CASIO</h1><br>
+            <p class="casio">ELECTRONIC CALCULATOR&nbsp;<i class="fa-solid fa-calculator isp"></i></p>
+            <p class="casio">HL-815L</p><br>
+        </div>
+        
+            <input type="text" id="screen" placeholder="0" disabled>
+        
+       
+        <div>
+            <button class="customBtn1" onclick="valueGet(1)">1</button>
+            <button class="customBtn1"onclick="valueGet(2)">2</button>
+            <button class="customBtn1"onclick="valueGet(3)">3</button>
+            <button class="customBtn2" onclick="valueGet('+')">+</button>
+        </div>
+        
+        <div>
+            <button class="customBtn1"onclick="valueGet(4)">4</button>
+            <button class="customBtn1"onclick="valueGet(5)">5</button>
+            <button class="customBtn1"onclick="valueGet(6)">6</button>
+            <button class="customBtn2"onclick="valueGet('-')">-</button>
+        </div>
+        
+        <div>
+            <button class="customBtn1"onclick="valueGet(7)">7</button>
+            <button class="customBtn1"onclick="valueGet(8)">8</button>
+            <button class="customBtn1"onclick="valueGet(9)">9</button>
+            <button class="customBtn2"onclick="valueGet('/')">/</button>
+        </div>
+        <div >
+            <button class="customBtn1"onclick="valueGet(0)">0</button>
+            <button class="customBtn2" onclick="calculation()">=</button>
+            <button class="customBtn2" onclick="clearAll()">C</button>
+            <button class="customBtn2"onclick="valueGet('*')">x</button>
+        </div>
+
+    </div>
+    <script src="App.js"></script>
+</body>
+</html>
